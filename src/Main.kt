@@ -1,7 +1,14 @@
 fun main() {
-    val myTemp: Temperature = Temperature(Temperature.Unit.K)
+    val myFTemp: Temperature = Fahrenheit(100.0)
 
-    myTemp.setTemp(0.0)
+    myFTemp.setTemp(110.0)
 
-    println("The temperature is ${myTemp.getTemp(Temperature.Unit.K)}")
+    println(myFTemp.getTemp())
+    println(myFTemp.getTempIn(Temperature.Unit.C))
+    myFTemp.setTemp(10.0)
+    println(myFTemp.getTempIn(Temperature.Unit.C))
+    println(myFTemp.getTemp())
+
+
+
 }
